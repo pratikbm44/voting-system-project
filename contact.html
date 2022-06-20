@@ -1,0 +1,79 @@
+<html>
+<head>
+    <style>
+    .back {
+  background-color: #04AA6D;
+  color: white;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: black;
+  cursor: pointer;
+}
+.container {
+  border-radius: 5px;
+  background-color: #9bee82;
+  padding: 10px;
+}
+.column {
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+    <button type="btn info" class="back"><a href="login.html">Back</a></button>
+    <button type="btn info" class="home" style="float: right;"><a href="home.html">Home</a></button>
+    
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>if you have any problem then leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+       <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="state">State</label>
+        <select id="state" name="state">
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Goa">Goa</option>
+          <option value="punjab">Punjab</option>
+          <option value="Assam">Assam</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <p>Double click to submit</p>
+        <button ondblclick="myalert()">
+            submit
+          </button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+    function myalert() {
+        alert("submit successfully");
+    }
+</script>
+
+
+</html>
